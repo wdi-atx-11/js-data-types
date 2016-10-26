@@ -94,8 +94,8 @@ In JavaScript, you can also use a `+` operation on strings. This is called **str
 "Hello, " + "world!";
 //=> "Hello, world!"
 
-"WDI " + 31;
-//=> "WDI 31"
+"WDI " + 33;
+//=> "WDI 33"
 ```
 
 These are fairly standard features across high-level programming languages.
@@ -106,20 +106,20 @@ Variables are labeled locations for storing data. You can create a variable with
 
 ```js
 var numForks;
-var lunchTime = 1215;
+var lunchTime = 1230;
 ```
 
-Instead of writing `1215` over and over in code, a program can access the information by variable name:
+Instead of writing `1230` over and over in code, a program can access the information by variable name:
 
 ```js
 lunchTime
-//=> 1215
+//=> 1230
 ```
 
 If the value needs to change, the variable can be updated using the assignment operator `=`.
 
 ```js
-lunchTime = '12:15!!!!';
+lunchTime = '12:30!!!!';
 ```
 
 Note that you can also freely change the type of data a variable is storing.
