@@ -106,20 +106,20 @@ Variables are labeled locations for storing data. You can create a variable with
 
 ```js
 var numForks;
-var lunchTime = 1230;
+var lunchTime = 1215;
 ```
 
-Instead of writing `1230` over and over in code, a program can access the information by variable name:
+Instead of writing `1215` over and over in code, a program can access the information by variable name:
 
 ```js
 lunchTime
-//=> 1230
+//=> 1215
 ```
 
 If the value needs to change, the variable can be updated using the assignment operator `=`.
 
 ```js
-lunchTime = '12:30!!!!';
+lunchTime = '12:15';
 ```
 
 Note that you can also freely change the type of data a variable is storing.
