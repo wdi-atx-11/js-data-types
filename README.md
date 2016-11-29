@@ -350,7 +350,7 @@ Use JavaScript's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 
 ### Independent Practice
 
-Practice with this [training](https://github.com/sf-wdi-31/js-data-types-training).  
+Practice with this [training](https://github.com/sf-wdi-34/js-data-types-training).  
 
 
 ### Closing Thoughts
