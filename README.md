@@ -22,7 +22,7 @@ The need to process information drives programming languages.  JavaScript's data
 - Identify JavaScript data types.
 - Declare variables in the Chrome developer tools.
 - Get and set the values of variables.
-- Use built-in methods to manipulate strings and arrays.
+- Use built-in methods to manipulate arrays and perform math operations.
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
