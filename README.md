@@ -63,7 +63,7 @@ One of JavaScript's quirks is having both `null` and `undefined`. As a rule of t
 <details>
   <summary>Check for Understanding</summary>
   <p>
-    (1 minute) Whiteboarding on your table, write what primitive type you would expect each piece of data about a person to be represented as.
+    Whiteboarding on your table, write what primitive type you would expect each piece of data about a person to be represented as.
     <ol>
       <li>`name`</li>
       <li>`gaStudent`, whether or not they are a student at GA</li>
@@ -139,6 +139,33 @@ lunchTime = '12:15';
 
 Note that you can also freely change the type of data a variable is storing.
 
+####Check for Understanding
+Working with a partner and whiteboarding on your table, write what type each variable has, as well as what the value of the final expression would be.
+
+1. 
+```js
+  var a = 3;
+  var b = 7;
+  a+b;
+```
+2.
+```js
+  var a = "Hello";
+  var b = "name";
+  a + " " + name;
+```
+3.
+```js
+  var a = "Hello";
+  var b = 5;
+  a + " " + b;
+```
+4.
+```js
+  var a = true;
+  var b = "The truth is ";
+  b + a;
+```
 ### Arrays
 When we're working with data, we generally need to work with more than just primitives. Arrays store collections of data in **sequential** order.  Arrays are an example of a **reference data type** that allows us to group primitives together.
 Arrays are great for:
