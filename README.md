@@ -1,5 +1,5 @@
 <!--
-Creator: <Name>
+Creator: SF WDI instructors; most recent edits by Michelle Ferreirae
 Location: SF
 -->
 
@@ -14,8 +14,6 @@ Location: SF
 JavaScript is the most complete, capable language usable across browsers. It lets us change the content of a page programmatically (on the fly) instead of being stuck with just what's written in the HTML code.  It enables complex user interactions.
 
 The need to process information drives programming languages.  JavaScript's data types define how it can store and manipulate information. They're the building blocks of everything that can be done in JavaScript.
-
-For web developers, it's critically important to be able to work with JavaScript objects.  JavaScript's features are mostly built into objects like `Date`, `Math`, and `document`. We'll also see that JavaScript objects and arrays form the basis of JSON, a very popular format for transferring application data across the web.
 
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
@@ -40,7 +38,7 @@ A primitive value is represented at the lowest level of implementation of a prog
 JavaScript has **6 primitive data types**:
 
   * **string:** words or phrases (in quotes)
-  * **number:** integer, floating point number (decimal), `NaN`
+  * **number:** integer, floating point number (decimal), `NaN`<sup>+</sup>
   * **boolean:** `true` or `false`
   * **`null`:** non-existent object (used for blanking out variables)
   * **`undefined`:** empty variable
@@ -124,115 +122,19 @@ lunchTime = '12:15';
 
 Note that you can also freely change the type of data a variable is storing.
 
-### Objects
-
-Primitive data types are not enough for most programming purposes. Objects are **reference data types** that allow us to group primitives together.
-
-Instead of storing a value, variables holding objects store a reference to a location in memory, and the computer looks it up when needed.
-
-
-  ```js
-  var shirt = { size: "L", color: 'green', clean: false };
-  ```
-
-Objects store information in key-value pairs. The key acts like a label, and the value is the data or behavior associated with that label.
-
-`Object` is the most basic reference type in JavaScript. Every other non-primitive we'll use -- `Array`, `Function`, `Date` -- is actually built out from the basic `Object` type.
-
-
-#### Object Manipulation
-
-**Creating** an object literal:
-
-```js
-var person = { name: 'Bill', height: '5 feet, 9 inches', age: 34 };
-```
-
-**Getting** the value associated with a key:
-
-```js
-// this is called bracket notation:
-person['age']; //=> 34
-// this is called dot notation:
-person.age;    //=> 34
-
-// what if key doesn't exist?
-person['hasGlasses']; //=> undefined
-```
-
-**Adding** a key-value pair:
-
-```js
-person['hairColor'] = 'blonde';
-person.hairColor = 'blonde';
-//=> { name: 'Bill', height: '5 feet, 9 inches', age: 34, hairColor: 'blonde' }
-```
-
-**Setting** the value for a key:
-
-```js
-person['hairColor'] = 'green';
-person.hairColor = 'green';
-//=> { name: 'Bill', height: '5 feet, 9 inches', age: 34, hairColor: 'green' }
-```
-
-
-**Semi-removing** a value:  
-
-Use `null` as a marker for an empty value.
-
-```js
-person.hairColor = null;
-```
-
-
-**Fully removing** a key-value pair (rare):
-
-```js
-delete person.height;
-//=> { name: 'Bill', age: 34, hairColor: 'green' }
-```
-
-Finding **keys** in the object (rare):
-
-```js
-var keys = Object.keys(person);
-//=> ['name', 'age', 'hairColor']
-```
-
-
-**Looping** through Objects (rare):
-
-One way to loop through objects in JavaScript is to use `for ... in` loops:
-
-```js
-for (key in person){
-  // this next condition is required because of the prototype chain, which we haven't talked about quite yet
-  if (person.hasOwnProperty(key)){  
-    console.log(key, ": ", person[key]);
-  }
-}
-// the order is not guaranteed, but this console logs:
-//   'name': 'Bill'
-//   'age': 34
-//   'hairColor': null
-```
-
-
 ### Arrays
-
-```js
-var friends = ["Moe", "Larry", "Curly"];
-//=> ["Moe", "Larry", "Curly"]
-```
-
-Arrays are objects that store collections of data in **sequential** order.  Arrays are great for:
+When we're working with data, we generally need to work with more than just primitives. Arrays store collections of data in **sequential** order.  Arrays are an example of a **reference data type** that allows us to group primitives together.
+Arrays are great for:
 
 * Storing collections of one kind of data
 * Ordered lists
 * Enumerating data, i.e. using an index to find items
 * Quickly reordering data
 
+```js
+var friends = ["Moe", "Larry", "Curly"];
+//=> ["Moe", "Larry", "Curly"]
+```
 
 ####Array Manipulation
 
@@ -255,8 +157,6 @@ fruits[3]; //=> "Durian"
 ```js
 fruits[3] = "Grape";
 ```
-
-> Noticing a pattern? Arrays are a kind of object, and indices are just the keys.  Arrays don't allow dot notation, though.
 
 **Looping** through Arrays:
 
@@ -308,22 +208,14 @@ fruits.indexOf("Jackfruit"); // 9
 fruits[9]; //=> "Jackfruit"
 ```
 
-![img](http://www.frusion.com/media/1011/fruit-row.png)
+![img](http://www.purfresh.com/images/im_fruit_row.jpg)
 
 
-Check out MDN's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Array documentation</a> for more information on arrays. In particular, all of the methods listed in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Array_instances" target="_blank">Array instances</a> section are available to use with JavaScript arrays. Commonly used array methods include `join`, `sort`, and `reverse`.
+Check out MDN's [Array documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) for more information on arrays. In particular, all of the methods listed in the [Array instances](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Array_instances) section are available to use with JavaScript arrays. Commonly used array methods include `join`, `sort`, and `reverse`.
 
 
-### Other Object Types
-
-#### `String`
-
-JavaScript primitives can't have methods or attributes; they're just simple data.  For convenience, JavaScript includes specialized global objects to "wrap" most of its primitives, providing handy built-in methods and properties.
-
-`String` is the most commonly used of these objects.
-
-[MDN String Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
+### Working with Other Objects
+This is a quick introduction to how to access some useful tools in JavaScript. Tomorrow, we'll go in-depth on objects, how they work, and how to create and use them; for now, it's important to get comfortable working with `Math` and `Arrays` functions.
 #### `Math`
 
 In order to perform certain number operations, JavaScript has a `Math` object with some very useful methods.
