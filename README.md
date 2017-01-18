@@ -60,6 +60,23 @@ One of JavaScript's quirks is having both `null` and `undefined`. As a rule of t
 
 <sup>+</sup>`NaN` is a special global value meaning "Not A Number". `NaN` is the returned value when numerical evaluations fail, e.g. `8/"hello"`.
 
+<details>
+  <summary>Check for Understanding</summary>
+  <p>
+    (1 minute) Whiteboarding on your table, write what primitive type you would expect each piece of data about a person to be represented as.
+    <ol>
+      <li>`name`</li>
+      <li>`gaStudent`, whether or not they are a student at GA</li>
+      <li>`age`</li>
+      <li>`streetNumber`</li>
+      <li>`streetName`</li>
+      <li>`city`</li>
+      <li>`state`</li>
+      <li>`zipCode`</li>
+      <li>`phoneNumber`</li>
+    </ol>
+  </p>
+</details>
 ### Expressions and Operations
 
 An expression is code that evaluates to some value.
@@ -158,15 +175,6 @@ fruits[3]; //=> "Durian"
 fruits[3] = "Grape";
 ```
 
-**Looping** through Arrays:
-
-```js
-  for (var i=10; i>0; i--){
-    console.log(i);
-  }
-  console.log('Blastoff!');
-```
-
 #### Array Properties and Methods
 
 **Finding the number of elements**, in the **length** property:
@@ -176,6 +184,15 @@ fruits.length; //=> 10
 ```
 
 > Note that length is a property, NOT a method, for JavaScript arrays!
+
+**Looping** through Arrays:
+
+```js
+  for (var i=0; i<fruits.length; i++){
+    console.log(fruits[i]);
+  }
+  console.log('Blastoff!');
+```
 
 **Adding** an element to the **front**:
 
@@ -215,7 +232,8 @@ Check out MDN's [Array documentation](https://developer.mozilla.org/en-US/docs/W
 
 
 ### Working with Other Objects
-This is a quick introduction to how to access some useful tools in JavaScript. Tomorrow, we'll go in-depth on objects, how they work, and how to create and use them; for now, it's important to get comfortable working with `Math` and `Arrays` functions.
+This is a quick introduction to how to access some useful tools in JavaScript. Tomorrow, we'll go in-depth on objects, how they work, and how to create and use them; for now, it's important to get comfortable working with `Math`functions.
+
 #### `Math`
 
 In order to perform certain number operations, JavaScript has a `Math` object with some very useful methods.
@@ -237,8 +255,7 @@ Math.round(2.5);
 
 ### `typeof`
 
-
-Use JavaScript's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">`typeof`</a> method to check the type of a variable or value.
+Use JavaScript's [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) method to check the type of a variable or value.
 
 ### Independent Practice
 
@@ -247,7 +264,7 @@ Practice with this [training](https://github.com/sf-wdi-34/js-data-types-trainin
 
 ### Closing Thoughts
 
-For web developers, it's critically important to be able to work with JavaScript objects.  JavaScript's features are mostly built into objects like `Date`, `Math`, and `document`. We'll also see that JavaScript objects and arrays form the basis of JSON, a very popular format for transferring application data across the web.
+For web developers, it's critically important to be able to work with JavaScript objects.  JavaScript's features are mostly built into objects like `Date`, `Math`, and `document`. We'll cover objects in more detail tomorrow.
 
 The most important things to practice right now are:
 
