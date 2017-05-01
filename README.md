@@ -49,19 +49,18 @@ One of JavaScript's quirks is having both `null` and `undefined`. As a rule of t
 
 
 
-<!-- | Type | Example(s) | Falsey Value(s) |
+| Type | Example(s) | Falsey Value(s) |
 | :--- | :-----  | :-- |
 | **string** | `'lightyear'`, `"867-5309"` | `''` or `"" ` |
 | **number** | `3.1415`, `31` | `0`, `-0`, `NaN`<sup>+</sup> |
 | **boolean** | only `true` or `false` | `false` |
 | **null** | only `null` | `null` |
 | **undefined** | only `undefined` | `undefined` |
-| **symbol** | `Symbol("first")` | &nbsp; | -->
+| **symbol** | `Symbol("first")` | &nbsp; |
 
 <sup>+</sup>`NaN` is a special global value meaning "Not A Number". `NaN` is the returned value when numerical evaluations fail, e.g. `8/"hello"`.
 
-<details>
-  <summary>Check for Understanding</summary>
+Check for Understanding
   <p>
     Whiteboarding on your table, write what primitive type you would expect each piece of data about a person to be represented as.
     <ol>
@@ -76,7 +75,8 @@ One of JavaScript's quirks is having both `null` and `undefined`. As a rule of t
       <li>`phoneNumber`</li>
     </ol>
   </p>
-</details>
+
+
 ### Expressions and Operations
 
 An expression is code that evaluates to some value.
@@ -139,7 +139,7 @@ lunchTime = '12:15';
 
 Note that you can also freely change the type of data a variable is storing.
 
-####Check for Understanding
+#### Check for Understanding
 Working with a partner and whiteboarding on your table, write what type each variable has, as well as what the value of the final expression would be.
 
 1. 
@@ -180,7 +180,7 @@ var friends = ["Moe", "Larry", "Curly"];
 //=> ["Moe", "Larry", "Curly"]
 ```
 
-####Array Manipulation
+#### Array Manipulation
 
 **Creating** an array (literal):
 
