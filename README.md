@@ -64,15 +64,15 @@ Check for Understanding
   <p>
     Whiteboarding on your table, write what primitive type you would expect each piece of data about a person to be represented as.
     <ol>
-      <li>`name`</li>
-      <li>`gaStudent`, whether or not they are a student at GA</li>
-      <li>`age`</li>
-      <li>`streetNumber`</li>
-      <li>`streetName`</li>
-      <li>`city`</li>
-      <li>`state`</li>
-      <li>`zipCode`</li>
-      <li>`phoneNumber`</li>
+      <li>name</li>
+      <li>gaStudent, whether or not they are a student at GA</li>
+      <li>age</li>
+      <li>streetNumber</li>
+      <li>streetName</li>
+      <li>city</li>
+      <li>state</li>
+      <li>zipCode</li>
+      <li>phoneNumber</li>
     </ol>
   </p>
 
